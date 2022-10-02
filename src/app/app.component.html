@@ -2,8 +2,7 @@
   <div class="ui card">
     <h1>Team Generator</h1>
     <ul class="list">
-      <li>John Doe</li>
-      <li>Marie Chan</li>
+      <li *ngFor="let member of members">{{ member }}</li>
     </ul>
 
     <div class="add-members-container">
