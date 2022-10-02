@@ -9,4 +9,13 @@ export class AppComponent {
   title = 'team-generator';
   newMemberName = '';
   members: string[] = [];
+
+  onInput(member: string) {
+    this.newMemberName = member;
+  }
+
+  addMember() {
+    this.members.push(this.newMemberName);
+    console.log(this.members);
+  }
 }
